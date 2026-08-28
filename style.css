@@ -1,3 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Inter", sans-serif;
+}
+
+.header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 16rem;
+}
+
+.logo {
+    width: 16%;
+}
+
+.github-logo {
+    width: 2%;
+    position: absolute;
+    top: 30%;
+    left: 90%;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    padding: 1em 2em;
+    background-color: #e52b1e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #c42014;
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
