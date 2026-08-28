@@ -95,3 +95,74 @@ body {
     font-size: 54px;
     color: #39c5bb;
 }
+
+.promo-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.big-card {
+    flex: 1;
+    border-radius: 24px;
+    padding: 24px 20px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+
+.card-grid {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.sub-card {
+    background-color: #f0f0f0;
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    min-height: 180px;
+}
+
+.big-card-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #39c5bb;
+}
+
+.big-card-img {
+    width: 75%;
+    align-self: center;
+    margin-top: 16px;
+}
+
+.sub-card-img {
+    width: 100%;
+    max-width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.sub-card-text {
+    font-size: 1rem;
+    color: black;
+    margin-top: 16px;
+}
+
+.big-text {
+    font-size: 4rem;
+}
