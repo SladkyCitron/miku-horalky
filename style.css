@@ -36,6 +36,16 @@ body {
     height: auto;
 }
 
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: min(45vw, 180px);
+    }
+}
+
 .hero-container {
     position: relative;
     width: 100%;
@@ -72,16 +82,16 @@ body {
 
 .content {
     padding: 2em;
-    max-width: 1200px;
     margin: 0 auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
-@media (max-width: 600px) {
-    .header {
-        padding: 1rem;
-    }
-
-    .logo {
-        width: min(45vw, 180px);
-    }
+.title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 900;
+    font-size: 54px;
+    color: #39c5bb;
 }
