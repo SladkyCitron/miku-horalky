@@ -14,18 +14,26 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 10vw, 16rem);
 }
 
 .logo {
-    width: 16%;
+    width: clamp(120px, 16vw, 230px);
+    height: auto;
+}
+
+.header > a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 .github-logo {
-    width: 2%;
-    position: absolute;
-    top: 30%;
-    left: 90%;
+    width: clamp(24px, 2.5vw, 40px);
+    height: auto;
 }
 
 .hero-container {
@@ -66,4 +74,14 @@ body {
     padding: 2em;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: min(45vw, 180px);
+    }
 }
