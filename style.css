@@ -280,3 +280,12 @@ body {
         height: auto;
     }
 }
+
+.youtube-video {
+    display: block;
+    width: min(100%, 800px);
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 24px;
+}
