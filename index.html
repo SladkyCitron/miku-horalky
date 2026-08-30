@@ -46,7 +46,9 @@
             >
         </div>
         <div class="content">
-            <h1 class="title">Najobľúbenejšia virtuálna speváčka na svete.</h1>
+            <h1 class="title main-title">
+                Najobľúbenejšia virtuálna speváčka na svete.
+            </h1>
             <div class="promo-card">
                 <div class="big-card">
                     <div class="big-card-title">Nádherná.</div>
@@ -248,6 +250,44 @@
                 <div class="faq-item">
                     <details>
                         <summary class="faq-question">
+                            <h3>
+                                Prečo je Hatsune Miku lepšia než Kasane Teto?
+                            </h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Lebo Hatsune Miku je lepšia než Kasane Teto.</p>
+                            <br />
+                            <div class="faq-item">
+                                <details>
+                                    <summary class="faq-question">
+                                        <h3>A čo tak Teto fanúšikovia?</h3>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p>
+                                            Rešpektujeme ich právo nemať pravdu.
+                                            Môžu si založiť vlastnú stránku. A
+                                            dať si tam francúzske bagety a
+                                            Mesmerizer.
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            <h3>Existuje niečo, čo Hatsune Miku nedokáže?</h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Odstúpiť z trónu.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
                             <h3>Obsahuje balenie aj pór?</h3>
                         </summary>
                         <div class="faq-answer">
@@ -260,7 +300,75 @@
                         </div>
                     </details>
                 </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            <h3>
+                                Potrebuje Hatsune Miku počas vystúpenia dýchať?
+                            </h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Nie. Absencia pľúc umožňuje Hatsune Miku spievať
+                                240 BPM pasáže bez prerušenia. Kyslík je pre
+                                amatérov.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            <h3>
+                                Čo mám robiť, ak mi Miku hrá v hlave rent-free?
+                            </h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Tento stav je považovaný za funkciu, nie chybu.
+                                Reklamácie z dôvodu neustáleho znenia "I'm
+                                thinking Miku, Miku (oo ee oo)"
+                                <strong>neakceptujeme</strong>.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            <h3>Funguje Hatsune Miku s GoTAU?</h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Možno áno, možno nie. :3</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question faq-question-miku-bday">
+                            <h3>Je 31. august oficiálny štátny sviatok?</h3>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Ak nie je, mal by byť.</p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </div>
+        <script>
+            // check if it's Miku's bday
+            let today = new Date();
+            if (today.getMonth() === 7 && today.getDate() === 31) {
+                let mainTitle = document.querySelector(".main-title");
+                let question = document.querySelector(
+                    ".faq-question-miku-bday",
+                );
+
+                mainTitle.textContent =
+                    "Všetko najlepšie k narodeninám, Miku. \u{1FA75}";
+                question.innerHTML =
+                    "<h3>Je dneska oficiálny štátny sviatok?</h3>";
+            }
+        </script>
     </body>
 </html>
